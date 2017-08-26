@@ -7,8 +7,17 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-input name="username" type="text" value="" placeholder="Username"></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="fnDojo()">Buscar</button>
+  <ion-card>
+    <ion-card-header>
+      {{informacion.url}}
+    </ion-card-header>
+    <ion-card-content>
+      <img src="{{informacion.avatar_url}}" alt="">
+    </ion-card-content>
+  </ion-card>
 </ion-content>
